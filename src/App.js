@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import styled from 'styled-components'
+import { Switch, Route } from 'react-router-dom'
+import { Header } from './components/Header'
+import Footer from './components/Footer'
+import Landing from './pages/Landing'
 
-function App() {
+import Developer from './pages/Developer'
+import UxDesigner from './pages/UxDesigner'
+import About from './pages/About'
+import Contact from './pages/Contact'
+
+const AppContainer = styled.div`
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  /* border: 2px solid lightcoral; */
+`
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <AppContainer>
+      <Header />
+      <Switch>
+        <Route exact path='/home'>
+          <Landing />
+        </Route>
+        <Route path='/developer'>
+          <Developer />
+        </Route>
+        <Route path='/uxdesigner'>
+          <UxDesigner />
+        </Route>
+        <Route path='/about'>
+          <About />
+        </Route>
+        <Route path='/contact'>
+          <Contact />
+        </Route>
+      </Switch>
+      <Footer />
+    </AppContainer>
+  )
 }
-
-export default App;
