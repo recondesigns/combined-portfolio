@@ -22,7 +22,7 @@ export default function App() {
     <AppContainer>
       <Header />
       <Switch>
-        <Route exact path='/home'>
+        <Route exact path='/'>
           <Landing />
         </Route>
         <Route path='/developer'>

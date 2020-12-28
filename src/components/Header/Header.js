@@ -81,7 +81,7 @@ export default function Header() {
         <HeaderContainer>
             <img className={'logo'} src={logo} alt={'Impact Design logo'} />
             <div className={'nav-container'}>
-                <NavLink to='/home' activeClassName='selected'>Home</NavLink>
+                <NavLink to='/' activeClassName='selected'>Home</NavLink>
                 <NavLink to='/developer' activeClassName='selected'>Developer</NavLink>
                 <NavLink to='/uxdesigner' activeClassName='selected'>UX Designer</NavLink>
                 <NavLink to='/about' activeClassName='selected'>About</NavLink>
