@@ -132,7 +132,7 @@ export default function SliceThree() {
                 <p>{'Web development has been in my life since a random class in high school exposed me to HTML and CSS (pre-CSS 2.1 lol), which ignited a lifelong hobby of coding.'}<br /><br />{'Luckily, I get paid to rev up my dev mastery and to professionally solve user problems by augmenting my coding skillset with UX Design principles.'}</p>
                 <div className={'button-wrapper'}>
                     <NavLink to='/contact' activeClassName={'selected'}>
-                        <Button buttonStyle={'secondary'} buttonText={'Contact me'} />
+                        <Button buttonStyle={'primary'} buttonText={'Contact me'} />
                     </NavLink>
                 </div>
             </div>

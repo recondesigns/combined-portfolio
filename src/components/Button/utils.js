@@ -1,7 +1,13 @@
 export function setButtonStyling(status) {
     if (status === 'primary') {
-        return `#ECD679`
+        return {
+            background: `#ECB390`,
+            color: `#303030`
+        } 
     } else if (status === 'secondary') {
-        return `#FFFFFF`
+        return {
+            background: `#FFFFFF`,
+            color: `#303030`
+        }
     }
 }

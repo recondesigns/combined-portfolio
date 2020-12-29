@@ -20,7 +20,8 @@ const StyledButton = styled.button`
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #303030;
-    outline: none;
+    /* outline: none; */
+    color: ${props => props.color};
 
     &:hover {
         box-shadow: 2px 2px 0px rgba(48, 48, 48, 0.5);
@@ -33,7 +34,8 @@ const StyledButton = styled.button`
 
 export default function Button(props) {
     const { buttonStyle, buttonText } = props
-    let background = setButtonStyling(buttonStyle)
+    const { background, color } = setButtonStyling(buttonStyle)
+    // let background = setButtonStyling(buttonStyle)
 
-    return <StyledButton background={background}>{buttonText}</StyledButton>
+    return <StyledButton background={background} color={color}>{buttonText}</StyledButton>
 }
