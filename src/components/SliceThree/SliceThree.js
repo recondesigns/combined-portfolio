@@ -5,7 +5,7 @@ import { Button } from '../Button'
 import headshot from '../../assets/images/headshot2x.png'
 
 const SliceContainer = styled.div`
-    background: #ECD679;
+    background: #FCF8E8;
 
     @media (min-width: 768px) {
         display: flex;

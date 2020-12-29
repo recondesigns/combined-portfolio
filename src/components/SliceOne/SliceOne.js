@@ -9,7 +9,7 @@ import mapLarge from '../../assets/images/map-lrg.png'
 
 const SliceContainer = styled.div`
     height: 736px;
-    background: #F7FCFC;
+    background: #D4E2D4;
 
     @media (min-width: 768px) {
         display: flex;
