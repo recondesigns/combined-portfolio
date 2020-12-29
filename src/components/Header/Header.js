@@ -34,9 +34,9 @@ const HeaderContainer = styled.div`
             text-decoration: none;
         }
 
-        & > .selected {
+        /* & > .selected {
             text-decoration: underline;
-        }
+        } */
 
         @media (min-width: 768px) {
             display: flex;
