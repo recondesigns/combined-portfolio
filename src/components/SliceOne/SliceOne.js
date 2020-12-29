@@ -78,7 +78,7 @@ const SliceContainer = styled.div`
             color: #303030;
 
             & > span {
-                color: #40ACBF;
+                color: #DF7861;
             }
 
             @media (min-width: 768px) {

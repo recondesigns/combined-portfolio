@@ -61,7 +61,7 @@ const SliceContainer = styled.div`
             }
 
             & > span {
-                color: #40ACBF;
+                color: #DF7861;
             }
         }
 
