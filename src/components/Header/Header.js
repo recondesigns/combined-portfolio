@@ -34,6 +34,22 @@ const HeaderContainer = styled.div`
             text-decoration: none;
         }
 
+        & > p {
+            margin: 0px;
+            font-family: Open Sans Condensed;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #303030;
+            opacity: 60%;
+            text-decoration: line-through;
+        }
+
         /* & > .selected {
             text-decoration: underline;
         } */
@@ -82,10 +98,14 @@ export default function Header() {
             <img className={'logo'} src={logo} alt={'Impact Design logo'} />
             <div className={'nav-container'}>
                 <NavLink to='/' activeClassName='selected'>Home</NavLink>
-                <NavLink to='/developer' activeClassName='selected'>Developer</NavLink>
-                <NavLink to='/uxdesigner' activeClassName='selected'>UX Designer</NavLink>
-                <NavLink to='/about' activeClassName='selected'>About</NavLink>
-                <NavLink to='/contact' activeClassName='selected'>Contact</NavLink>
+                <p>Developer</p>
+                <p>UX Developer</p>
+                <p>About</p>
+                <p>Contact</p>
+                {/* <NavLink to='/developer' activeClassName='selected' >Developer</NavLink> */}
+                {/* <NavLink to='/uxdesigner' activeClassName='selected'>UX Designer</NavLink> */}
+                {/* <NavLink to='/about' activeClassName='selected'>About</NavLink> */}
+                {/* <NavLink to='/contact' activeClassName='selected'>Contact</NavLink> */}
             </div>
             <img className={'menu'} src={menuIcon} alt={'View navigation'} />
         </HeaderContainer>
